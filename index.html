@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Creative Academy — Earn $5,000–$15,000/Month From Pakistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   AI CREATIVE ACADEMY — CLEAN CSS v3.0
+   Consolidated, conflict-free, mobile-first
+═══════════════════════════════════════════ */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --or:#F97316;--bl:#4C8CE4;--pu:#8B5CF6;--gn:#22C55E;--rd:#EF4444;
+  --bg:#080810;--bg2:#0c0c1a;--bg3:#111120;
+  --card:#13131f;--card2:#181828;--border:rgba(255,255,255,.07);
+  --text:#dde0f0;--muted:#5e6080;--white:#fff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── PROGRESS BAR ── */
+#prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:9999;background:linear-gradient(90deg,#F97316,#4C8CE4,#8B5CF6);pointer-events:none;transition:width .1s linear}
+
+/* ── NAVIGATION ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(8,8,16,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Inter',sans-serif;font-weight:800;font-size:16px;color:#fff;text-decoration:none}
+.nav-logo span{color:#F97316}
+.nav-r{display:flex;align-items:center;gap:14px}
+.nav-spots{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:#fff;white-space:nowrap}
+.nav-spots em{color:var(--or);font-style:normal}
+.spots-bar{width:88px;height:18px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(76,140,228,.3);overflow:hidden;position:relative}
+.spots-fill{position:absolute;left:0;top:0;bottom:0;width:34%;background:linear-gradient(90deg,#4C8CE4,#F97316);border-radius:9px}
+.spots-fill::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);animation:sh 2s ease infinite}
+@keyframes sh{0%{transform:translateX(-100%)}100%{transform:translateX(300%)}}
+.btn-nav{padding:9px 20px;border-radius:8px;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:800;font-size:13px;background:linear-gradient(135deg,#F97316,#e06010);color:#fff;box-shadow:0 4px 16px rgba(249,115,22,.3);transition:all .2s}
+.btn-nav:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(249,115,22,.45)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 40px 80px;position:relative;overflow:hidden}
+.h-bg{position:absolute;inset:0;pointer-events:none;z-index:0}
+.h-orb1{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.1),transparent 70%);top:-200px;right:-200px;animation:of 9s ease-in-out infinite}
+.h-orb2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(76,140,228,.08),transparent 70%);bottom:-100px;left:-100px;animation:of 11s ease-in-out infinite reverse}
+@keyframes of{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
+.h-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:70px 70px}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:center;position:relative;z-index:2}
+.hero-content{text-align:left}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 8px;border-radius:100px;border:1px solid rgba(249,115,22,.25);background:rgba(249,115,22,.06);margin-bottom:22px}
+.bdot{width:6px;height:6px;border-radius:50%;background:var(--or);animation:pd 2s ease infinite}
+@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+.badge-t{font-size:11px;font-weight:700;color:var(--or);letter-spacing:.5px;text-transform:uppercase}
+.hero h1{font-family:'Inter',sans-serif;font-weight:900;font-size:clamp(40px,4.8vw,70px);line-height:1.04;letter-spacing:-2.5px;margin-bottom:20px}
+.l1{display:block;color:#ffffff}
+.l2{display:block;color:#F97316}
+.l3{display:block;color:#4C8CE4}
+.hero-sub{font-size:16px;color:#6e6e90;line-height:1.75;margin:0 0 20px;max-width:560px}
+.hero-sub strong{color:var(--text)}
+.hero-vps{display:flex;flex-direction:column;gap:7px;margin:0 0 28px}
+.hvp{font-size:13px;color:#6e6e90;line-height:1.5}
+.hvp span{color:#F97316;font-weight:700}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start;margin-bottom:36px}
+.btn-p,.btn-big{font-family:'Inter',sans-serif;font-weight:800;font-size:15px;padding:15px 30px;border-radius:10px;border:none;cursor:pointer;background:linear-gradient(135deg,#F97316,#e06010);color:#fff;box-shadow:0 4px 24px rgba(249,115,22,.35);transition:all .25s;text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden}
+.btn-p:hover,.btn-big:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(249,115,22,.5)}
+.btn-p:active,.btn-big:active{transform:scale(.98)}
+.btn-s{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;padding:15px 26px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;transition:all .25s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-s:hover{border-color:rgba(76,140,228,.4);background:rgba(76,140,228,.06)}
+.hstats{display:flex;gap:32px;flex-wrap:wrap;justify-content:flex-start}
+.hs{display:flex;flex-direction:column;align-items:flex-start}
+.hs-n{font-family:'Inter',sans-serif;font-weight:900;font-size:28px;color:#F97316;line-height:1}
+.hs:nth-child(2) .hs-n,.hs:nth-child(4) .hs-n{color:#4C8CE4}
+.hs-l{font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:.7px;text-transform:uppercase;font-weight:600}
+
+/* Hero visual — orbital rings */
+.hero-vis{display:flex;align-items:center;justify-content:center}
+.logo-wrap{position:relative;width:380px;height:380px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ring{position:absolute;border-radius:50%;border:1px solid}
+.r1{width:100%;height:100%;border-color:rgba(249,115,22,.15);animation:cw 28s linear infinite}
+.r2{width:77%;height:77%;border-color:rgba(76,140,228,.2);animation:ccw 20s linear infinite}
+.r3{width:54%;height:54%;border-color:rgba(139,92,246,.12);animation:cw 14s linear infinite}
+@keyframes cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes ccw{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+.od{position:absolute;width:9px;height:9px;border-radius:50%;top:50%;left:50%;margin:-4.5px}
+.od1{background:#F97316;box-shadow:0 0 14px #F97316;animation:oo1 4.5s linear infinite}
+.od2{background:#4C8CE4;box-shadow:0 0 14px #4C8CE4;animation:oo2 7.5s linear infinite}
+.od3{background:#8B5CF6;box-shadow:0 0 10px #8B5CF6;animation:oo3 11s linear infinite}
+@keyframes oo1{from{transform:rotate(0deg)translateX(188px)rotate(0deg)}to{transform:rotate(360deg)translateX(188px)rotate(-360deg)}}
+@keyframes oo2{from{transform:rotate(120deg)translateX(144px)rotate(-120deg)}to{transform:rotate(480deg)translateX(144px)rotate(-480deg)}}
+@keyframes oo3{from{transform:rotate(240deg)translateX(101px)rotate(-240deg)}to{transform:rotate(600deg)translateX(101px)rotate(-600deg)}}
+.logo-center{width:42%;height:42%;border-radius:50%;background:linear-gradient(135deg,#13131f,#1c1c30);border:1px solid rgba(249,115,22,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(249,115,22,.06)}
+.lc-ai{font-family:'Inter',sans-serif;font-weight:900;font-size:34px;color:#F97316;line-height:1}
+.lc-sub{font-size:6.5px;font-weight:700;letter-spacing:2.5px;color:rgba(255,255,255,.35);text-transform:uppercase;margin-top:3px}
+
+/* ── URGENCY TICKER ── */
+.urg{background:linear-gradient(135deg,#0d0d1c,#111120);border-top:1px solid rgba(249,115,22,.12);border-bottom:1px solid rgba(76,140,228,.1);padding:12px 0;overflow:hidden}
+.urg-ticker{display:flex;gap:0;width:max-content;animation:tk 30s linear infinite}
+.urg-ticker:hover{animation-play-state:paused}
+.urg-item{white-space:nowrap;padding:0 24px;font-size:12px;font-weight:600;color:var(--muted)}
+.urg-item strong{color:#F97316;font-weight:800}
+.urg-item span{color:rgba(76,140,228,.3);margin:0 10px}
+@keyframes tk{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── PROOF BAR ── */
+.sec{padding:88px 28px}
+.si{max-width:1160px;margin:0 auto}
+.proof-bar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 36px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pi{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px}
+.pi-n{font-family:'Inter',sans-serif;font-weight:900;font-size:24px;color:#F97316;line-height:1}
+.pi:nth-child(2) .pi-n,.pi:nth-child(4) .pi-n{color:#4C8CE4}
+.pi-l{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+
+/* ── SECTION TITLES ── */
+.slabel{display:block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;color:#F97316}
+.ssub{font-size:15px;color:#6e6e90;max-width:600px;line-height:1.7;margin-bottom:48px}
+.ctr{text-align:center}.ctr .ssub{margin-left:auto;margin-right:auto}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s cubic-bezier(.22,.68,0,1.2)}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* ── MODULES ── */
+.mod-wrap{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--card)}
+.mod-item{display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid var(--border);transition:background .2s;position:relative}
+.mod-item:last-child{border-bottom:none}
+.mod-item:nth-child(even){background:rgba(255,255,255,.018)}
+.mod-item:hover{background:rgba(76,140,228,.04)}
+.mod-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(180deg,#F97316,#4C8CE4);transition:width .25s}
+.mod-item:hover::before{width:3px}
+.mod-num-col{padding:32px 0 32px 28px;display:flex;align-items:flex-start}
+.mod-num{font-family:'Inter',sans-serif;font-weight:900;font-size:44px;line-height:1;letter-spacing:-3px;color:rgba(249,115,22,.28)}
+.mod-item:nth-child(even) .mod-num{color:rgba(76,140,228,.28)}
+.mod-body{padding:32px 32px 32px 4px}
+.mod-title{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:8px;line-height:1.35;letter-spacing:-.2px}
+.mod-item:nth-child(1) .mod-title{color:#ffffff}
+.mod-item:nth-child(2) .mod-title{color:#4C8CE4}
+.mod-item:nth-child(3) .mod-title{color:#F97316}
+.mod-item:nth-child(4) .mod-title{color:#ffffff}
+.mod-item:nth-child(5) .mod-title{color:#4C8CE4}
+.mod-item:nth-child(6) .mod-title{color:#F97316}
+.mod-item:nth-child(7) .mod-title{color:#ffffff}
+.mod-item:nth-child(8) .mod-title{color:#4C8CE4}
+.mod-item:nth-child(9) .mod-title{color:#F97316}
+.mod-item:nth-child(10) .mod-title{color:#ffffff}
+.mod-hook{font-size:13.5px;color:#8a8aaa;line-height:1.65;margin-bottom:14px}
+.mod-bullets{display:flex;flex-direction:column;gap:8px}
+.mod-bullet{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#7878a0;line-height:1.5}
+.mod-bullet::before{content:'→';color:#F97316;font-size:13px;line-height:1.5;flex-shrink:0}
+.mod-item:nth-child(even) .mod-bullet::before{color:#4C8CE4}
+.mod-live{border-left:2px solid rgba(76,140,228,.4)}
+.mod-live .mod-title{color:#4C8CE4}
+.mod-live .mod-num{color:rgba(76,140,228,.35)}
+.mod-live .mod-bullet::before{color:#4C8CE4}
+.mod-bonus{background:linear-gradient(135deg,rgba(34,197,94,.05),rgba(76,140,228,.04));border-top:1px solid rgba(34,197,94,.15);padding:22px 28px;display:flex;align-items:flex-start;gap:16px}
+.mod-bonus-badge{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#22C55E;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);padding:4px 10px;border-radius:100px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.mod-bonus-text{font-size:13.5px;color:#8888a8;line-height:1.6}
+.mod-bonus-text strong{color:#fff}
+
+/* ── SECTION TITLES — 3-color premium gradient ── */
+.stitle{font-family:'Inter',sans-serif;font-weight:900;font-size:clamp(26px,3.2vw,46px);line-height:1.1;letter-spacing:-1.5px;margin-bottom:14px;background:linear-gradient(120deg,#ffffff 0%,#F97316 45%,#4C8CE4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* Curriculum section heading specifically */
+#modules .stitle{background:linear-gradient(120deg,#F97316 0%,#ffffff 50%,#4C8CE4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* Income section heading */
+.oc-icon{display:none}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+.sk{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;transition:all .3s;position:relative;overflow:hidden}
+.sk::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--or),transparent);opacity:0;transition:opacity .3s}
+.sk:hover{transform:translateY(-4px);border-color:rgba(249,115,22,.2);box-shadow:0 12px 32px rgba(0,0,0,.25)}
+.sk:hover::before{opacity:1}
+.sk:nth-child(2){border-color:rgba(76,140,228,.1)}
+.sk:nth-child(2)::before,.sk:nth-child(4)::before,.sk:nth-child(6)::before,.sk:nth-child(8)::before{background:linear-gradient(90deg,transparent,#4C8CE4,transparent)}
+.sk:nth-child(3){border-color:rgba(139,92,246,.1)}
+.sk:nth-child(3)::before,.sk:nth-child(5)::before,.sk:nth-child(7)::before{background:linear-gradient(90deg,transparent,#8B5CF6,transparent)}
+.sk-icon{font-size:28px;margin-bottom:12px;display:block}
+.sk-title{font-family:'Inter',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:4px;line-height:1.3}
+.sk:nth-child(1) .sk-title{color:#F97316}
+.sk:nth-child(2) .sk-title{color:#4C8CE4}
+.sk:nth-child(3) .sk-title{color:#8B5CF6}
+.sk:nth-child(4) .sk-title{color:#22C55E}
+.sk:nth-child(5) .sk-title{color:#F97316}
+.sk:nth-child(6) .sk-title{color:#4C8CE4}
+.sk:nth-child(7) .sk-title{color:#8B5CF6}
+.sk:nth-child(8) .sk-title{color:#22C55E}
+.sk-earn{font-size:11px;font-weight:700;color:#4C8CE4;margin-bottom:10px}
+.sk:nth-child(odd) .sk-earn{color:#F97316}
+.sk-desc{font-size:12px;color:var(--muted);line-height:1.6}
+@media(max-width:1000px){.skill-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.skill-grid{grid-template-columns:1fr}}
+.incl-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.ip{font-size:12px;font-weight:700;color:#4C8CE4;background:rgba(76,140,228,.08);border:1px solid rgba(76,140,228,.18);padding:5px 14px;border-radius:100px}
+.icta{text-align:center;margin-top:44px}
+
+/* ── INCOME / ROADMAP ── */
+.opp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:52px}
+.oc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px 20px;text-align:left;transition:all .3s;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.oc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--or),transparent);opacity:0;transition:opacity .3s}
+.oc:hover{transform:translateY(-6px);border-color:rgba(249,115,22,.2);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.oc:hover::before{opacity:1}
+.oc.feat{border-color:rgba(76,140,228,.2)}
+.oc.feat::before{background:linear-gradient(90deg,transparent,#4C8CE4,transparent);opacity:1}
+.oc-icon{font-size:26px;margin-bottom:10px;display:block}
+.oc-amt{font-family:'Inter',sans-serif;font-weight:900;font-size:26px;color:#F97316;line-height:1;margin-bottom:3px;letter-spacing:-1px}
+.oc.feat .oc-amt{color:#4C8CE4}
+.oc-range{font-size:10px;color:var(--muted);margin-bottom:8px}
+.oc-label{font-size:13px;font-weight:700;color:#fff;margin-bottom:8px}
+.oc-desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px;flex:1}
+.oc-bullets{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.oc-b{font-size:11px;color:#7878a0;line-height:1.4}
+.oc-time{font-size:10px;font-weight:700;color:#4C8CE4;background:rgba(76,140,228,.1);padding:3px 10px;border-radius:100px;display:inline-block;border:1px solid rgba(76,140,228,.18);align-self:flex-start}
+.roadmap{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:40px}
+.rm-title{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#fff;margin-bottom:36px;text-align:center;letter-spacing:-.5px}
+.rm-track{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.rm-track::before{content:'';position:absolute;top:22px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,#F97316,#4C8CE4,#8B5CF6,#22C55E);z-index:0}
+.rm-step{display:flex;flex-direction:column;align-items:center;position:relative;z-index:1;padding:0 12px;text-align:center}
+.rm-marker{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:#fff;margin-bottom:18px;flex-shrink:0}
+.rm-or{background:linear-gradient(135deg,#F97316,#e06010);box-shadow:0 4px 20px rgba(249,115,22,.4)}
+.rm-bl{background:linear-gradient(135deg,#4C8CE4,#3574d4);box-shadow:0 4px 20px rgba(76,140,228,.4)}
+.rm-pu{background:linear-gradient(135deg,#8B5CF6,#7c3aed);box-shadow:0 4px 20px rgba(139,92,246,.4)}
+.rm-gn{background:linear-gradient(135deg,#22C55E,#16a34a);box-shadow:0 4px 20px rgba(34,197,94,.4)}
+.rm-head{font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:8px}
+.rm-body{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:10px}
+.rm-earn{font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.06);padding:4px 12px;border-radius:100px;border:1px solid rgba(255,255,255,.08)}
+
+/* ── POSSIBILITIES ── */
+.poss-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.poss-c{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;transition:all .25s}
+.poss-c:hover{border-color:rgba(76,140,228,.35);background:rgba(76,140,228,.03);transform:translateY(-3px)}
+.poss-icon{font-size:24px;margin-bottom:8px}
+.poss-t{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.poss-e{font-size:12px;font-weight:700;color:#4C8CE4;margin-bottom:8px}
+.poss-desc{font-size:12px;color:var(--muted);line-height:1.55}
+
+/* ── SOCIAL PROOF PAGES ── */
+.pages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pgc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;transition:all .3s;text-decoration:none;display:block}
+.pgc:hover{transform:translateY(-5px);border-color:rgba(249,115,22,.25);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.pg-plat{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pg-handle{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.pg-followers{font-family:'Inter',sans-serif;font-weight:900;font-size:30px;color:#F97316;line-height:1;margin-bottom:4px}
+.pg-earn{font-size:12px;font-weight:700;color:#4C8CE4;margin-bottom:10px}
+.pg-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px}
+.pg-cta{font-size:11px;font-weight:700;color:var(--or);letter-spacing:.5px}
+
+/* ── COMPARE ── */
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmp-col{border-radius:16px;overflow:hidden}
+.cmp-head{padding:18px 24px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700}
+.cmp-head.bad{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.15);color:#f87171;border-bottom:none;border-radius:16px 16px 0 0}
+.cmp-head.good{background:rgba(76,140,228,.06);border:1px solid rgba(76,140,228,.18);color:#4C8CE4;border-bottom:none;border-radius:16px 16px 0 0}
+.cmp-body{background:var(--card);border:1px solid var(--border);border-top:none;padding:18px 24px;border-radius:0 0 16px 16px}
+.cmp-row{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+.cmp-row:last-child{border-bottom:none}
+.ci{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;flex-shrink:0;margin-top:2px}
+.ci-rd{background:rgba(239,68,68,.15);color:#f87171}
+.ci-gn{background:rgba(34,197,94,.15);color:#4ade80}
+.cmp-t{font-size:13px;color:var(--text);line-height:1.5}
+
+/* ── TESTIMONIALS ── */
+.testi-pages{position:relative}
+.testi-page{display:none}
+.testi-page.active{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tc{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:24px;position:relative;overflow:hidden;transition:all .3s}
+.tc::before{content:'"';position:absolute;top:-8px;left:12px;font-size:72px;font-family:Georgia,serif;color:rgba(249,115,22,.06);line-height:1;pointer-events:none}
+.tc:hover{transform:translateY(-4px);border-color:rgba(76,140,228,.2);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.tc-stars{font-size:11px;color:#F59E0B;letter-spacing:1px;margin-bottom:10px}
+.tc-text{font-size:13px;color:#9898b8;line-height:1.75;font-style:italic;margin-bottom:14px}
+.tc-earn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:5px;margin-bottom:12px}
+.te-or{background:rgba(249,115,22,.1);color:#fb923c;border:1px solid rgba(249,115,22,.2)}
+.te-bl{background:rgba(76,140,228,.1);color:#7aacf0;border:1px solid rgba(76,140,228,.2)}
+.te-gn{background:rgba(34,197,94,.1);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+.te-pu{background:rgba(139,92,246,.1);color:#a78bfa;border:1px solid rgba(139,92,246,.2)}
+.tc-foot{display:flex;align-items:center;gap:8px}
+.tc-av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;flex-shrink:0}
+.av-or{background:linear-gradient(135deg,#F97316,#e06010)}
+.av-bl{background:linear-gradient(135deg,#4C8CE4,#3574d4)}
+.av-pu{background:linear-gradient(135deg,#8B5CF6,#7c3aed)}
+.av-gn{background:linear-gradient(135deg,#22C55E,#16a34a)}
+.tc-name{font-size:12px;font-weight:700;color:#fff}
+.tc-loc{font-size:10px;color:var(--muted)}
+.tc-tag{margin-left:auto;font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px}
+.tt-or{background:rgba(249,115,22,.1);color:#fb923c}
+.tt-bl{background:rgba(76,140,228,.1);color:#7aacf0}
+.tt-pu{background:rgba(139,92,246,.1);color:#a78bfa}
+.tt-gn{background:rgba(34,197,94,.1);color:#4ade80}
+.testi-pager{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:28px}
+.tp-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(249,115,22,.3);background:rgba(249,115,22,.06);color:var(--or);cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:'Inter',sans-serif}
+.tp-btn:hover{background:rgba(249,115,22,.15);transform:scale(1.1)}
+.tp-dots{display:flex;gap:8px;align-items:center}
+.tp-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.1);cursor:pointer;transition:all .3s;border:1px solid rgba(255,255,255,.07)}
+.tp-dot.active{background:var(--or);width:24px;border-radius:4px;box-shadow:0 0 10px rgba(249,115,22,.4)}
+.tp-label{font-size:12px;color:var(--muted);font-weight:600}
+
+/* ── WHO ── */
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px;transition:all .25s}
+.wc:hover{transform:translateY(-4px);border-color:rgba(249,115,22,.18)}
+.wc:nth-child(2),.wc:nth-child(5){border-color:rgba(76,140,228,.1)}
+.wc:nth-child(3),.wc:nth-child(6){border-color:rgba(139,92,246,.08)}
+.wc-icon{font-size:30px;margin-bottom:12px}
+.wc-title{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:6px}
+.wc-desc{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* ── PRICING ── */
+.pricing-sec{background:linear-gradient(135deg,rgba(249,115,22,.04),var(--bg) 50%,rgba(76,140,228,.04))}
+.pricing-card{background:var(--card2);border:1px solid rgba(249,115,22,.2);border-radius:24px;padding:40px;max-width:580px;margin:0 auto;position:relative}
+.pricing-glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:240px;height:240px;background:radial-gradient(circle,rgba(249,115,22,.12),transparent 70%);pointer-events:none}
+.price-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 18px;border-radius:100px;background:linear-gradient(135deg,#F97316,#4C8CE4);color:#fff;margin-bottom:18px;animation:ptag 2.5s ease-in-out infinite}
+@keyframes ptag{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.price-old{font-size:13px;color:var(--muted);text-decoration:line-through;margin-bottom:4px}
+.price-main{font-family:'Inter',sans-serif;font-size:78px;font-weight:900;line-height:1;color:#F97316;margin-bottom:4px;letter-spacing:-3px}
+.price-pkr{font-size:18px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.price-note{font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+.bubble-wrap{margin-bottom:22px}
+.bubble-label{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.bubble-grid{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
+.bubble{width:16px;height:16px;border-radius:50%;transition:transform .2s;cursor:default}
+.bubble.taken{animation:bpop .4s cubic-bezier(.22,.68,0,1.4) both}
+.bubble.open{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}
+.bubble.taken:hover{transform:scale(1.4)}
+@keyframes bpop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.3)}100%{transform:scale(1);opacity:1}}
+.incl-list{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:9px}
+.incl-list li{display:flex;align-items:flex-start;gap:11px;font-size:13px;color:var(--text)}
+.ick{width:18px;height:18px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:9px;flex-shrink:0;margin-top:1px}
+.ick-or{background:rgba(249,115,22,.15);color:#fb923c}
+.ick-bl{background:rgba(76,140,228,.15);color:#7aacf0}
+.ick-gn{background:rgba(34,197,94,.15);color:#4ade80}
+.pay-select{background:var(--bg3);border:1px solid var(--border);border-radius:16px;padding:22px;margin-bottom:20px}
+.pay-select-title{font-size:13px;font-weight:700;margin-bottom:14px;background:linear-gradient(135deg,#F97316,#4C8CE4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pay-step-heading{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.step-badge{font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:100px;background:linear-gradient(135deg,#F97316,#4C8CE4);color:#fff;white-space:nowrap}
+.step-title{font-family:'Inter',sans-serif;font-size:17px;font-weight:700;color:#fff}
+.pay-tabs{display:flex;gap:8px;margin-bottom:18px}
+.pay-tab{flex:1;padding:11px 6px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:4px}
+.pay-tab .ti{font-size:17px}
+.pay-tab.active{border-color:var(--or);background:rgba(249,115,22,.08);color:#fff}
+.pay-panel{display:none}
+.pay-panel.active{display:block;animation:pin .25s ease}
+@keyframes pin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.pay-detail{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px}
+.pay-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
+.pay-row:last-child{border-bottom:none}
+.pay-key{font-size:12px;color:var(--muted)}
+.pay-val{font-size:13px;color:#fff;font-weight:700}
+.pay-val.big{font-size:22px;color:#F97316;font-weight:900}
+.copy-row{display:flex;align-items:center;gap:10px}
+.copy-btn{background:rgba(76,140,228,.1);border:1px solid rgba(76,140,228,.2);color:#7aacf0;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:12px;transition:all .2s;font-family:'Inter',sans-serif;font-weight:600}
+.copy-btn:hover{background:rgba(76,140,228,.2);transform:scale(1.05)}
+.copy-btn.copied{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.25);color:#4ade80}
+.big-steps{display:flex;flex-direction:column;gap:0;margin-top:16px}
+.big-step{display:flex;align-items:flex-start;gap:16px;background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:8px;transition:border-color .2s}
+.big-step:hover{border-color:rgba(249,115,22,.25)}
+.bstep-final{border-color:rgba(37,211,102,.2);background:rgba(37,211,102,.04)}
+.bstep-final:hover{border-color:rgba(37,211,102,.4)}
+.bstep-arrow{text-align:center;font-size:18px;color:rgba(249,115,22,.4);margin:-2px 0;display:block}
+.bstep-body{flex:1}border-radius:50%;background:linear-gradient(135deg,#F97316,#e06010);color:#fff;font-family:'Inter',sans-serif;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.bstep-head{font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:5px}
+.bstep-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.bstep-desc strong{color:var(--text)}
+.pay-soon{font-size:12px;color:var(--muted);text-align:center;padding:18px;background:var(--card);border-radius:10px;border:1px solid var(--border)}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;border-radius:12px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;font-family:'Inter',sans-serif;font-weight:800;font-size:14px;border:none;cursor:pointer;transition:all .25s;text-decoration:none;margin-bottom:12px;box-shadow:0 4px 20px rgba(37,211,102,.2)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,.35)}
+.pay-note{font-size:11px;color:var(--muted);text-align:center;line-height:1.6}
+.price-urgent{margin-top:16px;padding:13px;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.15);border-radius:10px;font-size:12px;color:var(--muted);text-align:center}
+.price-urgent strong{color:var(--or)}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.faq-item.open{border-color:rgba(249,115,22,.25)}
+.faq-q{width:100%;padding:18px 22px;background:none;border:none;text-align:left;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-icon{width:22px;height:22px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--or);transition:transform .25s;flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-a{max-height:300px}
+.faq-ai{padding:0 22px 18px;font-size:14px;color:#7878a0;line-height:1.7}
+
+/* ── STILL THINKING ── */
+.still-thinking{background:var(--card);border:1px solid rgba(249,115,22,.2);border-radius:20px;padding:44px 40px;text-align:center;max-width:680px;margin:0 auto;position:relative;overflow:hidden}
+.st-badge{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--or);text-transform:uppercase;margin-bottom:14px}
+.st-title{font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(20px,3vw,28px);color:#fff;letter-spacing:-.5px;line-height:1.2;margin-bottom:24px}
+
+/* ── INSTAGRAM STRIP ── */
+.ig-strip{display:flex;align-items:center;gap:24px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 32px;max-width:800px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.ig-icon{font-size:40px;flex-shrink:0}
+.ig-text{flex:1;min-width:200px;text-align:left}
+.ig-title{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:4px}
+.ig-sub{font-size:13px;color:var(--muted);line-height:1.5}
+.btn-ig{font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:12px 22px;border-radius:9px;background:linear-gradient(135deg,#F97316,#e06010);color:#fff;text-decoration:none;white-space:nowrap;transition:all .2s;box-shadow:0 4px 16px rgba(249,115,22,.3)}
+.btn-ig:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(249,115,22,.45)}
+
+/* ── FINAL CTA ── */
+.fcta{padding:110px 28px;text-align:center;position:relative;overflow:hidden}
+.fcta-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(249,115,22,.06),var(--bg) 50%,rgba(76,140,228,.06))}
+.fcta-orb{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.08),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.fcta-inner{position:relative;z-index:2}
+.fcta-title{font-family:'Inter',sans-serif;font-weight:900;font-size:clamp(38px,5vw,80px);line-height:1.02;letter-spacing:-3px;margin-bottom:14px;color:#fff}
+.fcta-sub{font-size:16px;color:var(--muted);margin-bottom:32px}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 28px}
+.fi{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.f-brand{font-family:'Inter',sans-serif;font-weight:800;font-size:15px;color:#fff}
+.f-brand span{color:#F97316}
+.f-copy{font-size:12px;color:var(--muted)}
+.f-links{display:flex;gap:20px}
+.f-links a{font-size:12px;color:var(--muted);text-decoration:none;font-weight:600;transition:color .2s}
+.f-links a:hover{color:var(--or)}
+
+/* ── RIPPLE ── */
+@keyframes rpl{to{transform:scale(4);opacity:0}}
+.rpl-el{position:absolute;border-radius:50%;background:rgba(255,255,255,.2);animation:rpl .55s linear forwards;pointer-events:none}
+
+/* ── PARTICLE FLOAT ── */
+@keyframes pfloat{0%{transform:translateY(0)translateX(0);opacity:0}10%{opacity:0.5}90%{opacity:0.2}100%{transform:translateY(-100vh)translateX(var(--drift,0px));opacity:0}}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1000px){
+  .opp-grid{grid-template-columns:1fr 1fr}
+  .pages-grid{grid-template-columns:1fr 1fr}
+  .testi-page.active{grid-template-columns:1fr}
+  .rm-track{grid-template-columns:1fr 1fr;gap:20px}
+  .rm-track::before{display:none}
+  .proof-bar{grid-template-columns:repeat(3,1fr)}
+  .cmp-grid{grid-template-columns:1fr}
+  .who-grid{grid-template-columns:1fr 1fr}
+  .poss-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  nav{padding:0 14px}
+  .nav-spots{display:none}
+  .sec{padding:60px 16px}
+  .hero{padding:90px 20px 60px}
+  .hero-inner{grid-template-columns:1fr;gap:36px}
+  .hero-content{text-align:center}
+  .hero-vps{align-items:center}
+  .hero-cta{justify-content:center}
+  .hstats{justify-content:center;gap:20px}
+  .hs{align-items:center}
+  .logo-wrap{width:260px;height:260px}
+  @keyframes oo1{from{transform:rotate(0deg)translateX(128px)rotate(0deg)}to{transform:rotate(360deg)translateX(128px)rotate(-360deg)}}
+  @keyframes oo2{from{transform:rotate(120deg)translateX(98px)rotate(-120deg)}to{transform:rotate(480deg)translateX(98px)rotate(-480deg)}}
+  @keyframes oo3{from{transform:rotate(240deg)translateX(69px)rotate(-240deg)}to{transform:rotate(600deg)translateX(69px)rotate(-600deg)}}
+  .learn-grid{grid-template-columns:1fr}
+  .mod-item{grid-template-columns:70px 1fr}
+  .mod-num-col{padding:22px 0 22px 18px}
+  .mod-body{padding:22px 18px 22px 4px}
+  .mod-num{font-size:32px}
+  .mod-title{font-size:14px}
+  .mod-hook{display:none}
+  .ig-strip{text-align:center}
+  .ig-text{text-align:center}
+  .incl-pills{justify-content:center}
+  .mod-bonus{flex-direction:column;gap:12px;padding:18px}
+}
+@media(max-width:600px){
+  .proof-bar{grid-template-columns:1fr 1fr;padding:18px}
+  .pages-grid{grid-template-columns:1fr}
+  .who-grid{grid-template-columns:1fr}
+  .poss-grid{grid-template-columns:1fr}
+  .rm-track{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(30px,8vw,44px);letter-spacing:-1.5px}
+  .hstats{gap:16px}
+  .hs-n{font-size:22px}
+  .pricing-card{padding:26px 18px}
+  .price-main{font-size:60px}
+  .pay-step-heading{gap:10px}
+  .step-title{font-size:14px}
+  .still-thinking{padding:28px 20px}
+  .big-step{padding:14px}
+  .bstep-head{font-size:13px}
+  .bstep-desc{font-size:12px}
+  .opp-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><span>AI</span> Creative Academy</a>
+  <div class="nav-r">
+    <div class="nav-spots">🔥 <em>33</em>&nbsp;spots left&nbsp;
+      <div class="spots-bar"><div class="spots-fill"></div></div>
+    </div>
+    <button class="btn-nav" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="h-bg"><div class="h-orb1"></div><div class="h-orb2"></div><div class="h-grid"></div></div>
+  <div class="hero-inner">
+    <!-- CENTERED HERO: text on top, orbital below -->
+    <div class="hero-content">
+      <div class="hero-badge"><div class="bdot"></div><span class="badge-t">🇵🇰 Pakistan's #1 AI Creative Course</span></div>
+      <h1>
+        <span class="l1">Earn $1,000 – $5,000</span>
+        <span class="l2">Per Month With AI</span>
+        <span class="l3">In 90 Days From Pakistan</span>
+      </h1>
+      <p class="hero-sub">The exact skills worldwide creators use to earn in dollars from home — <strong>no experience, no Upwork, no studio, no team.</strong> Build an AI influencer, create viral content, become a UGC creator, sell to global clients and so much more.</p>
+      <div class="hero-vps">
+        <div class="hvp">✓ No-brainer — $12 for a skill that earns $1,000+ on your very first project</div>
+        <div class="hvp">✓ Only 33 of 50 spots at $12 — price returns to $35 (Rs. 9,999) after</div>
+      </div>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn-p">Enroll Now — $12 (Rs. 3,499) →</a>
+        <a href="#modules" class="btn-s">See Modules ↓</a>
+      </div>
+      <div class="hstats">
+        <div class="hs"><span class="hs-n">$15K</span><span class="hs-l">Max/Month</span></div>
+        <div class="hs"><span class="hs-n">9</span><span class="hs-l">Modules</span></div>
+        <div class="hs"><span class="hs-n">90</span><span class="hs-l">Day Results</span></div>
+        <div class="hs"><span class="hs-n">$12</span><span class="hs-l">Today Only</span></div>
+      </div>
+    </div>
+    <!-- Orbital animation centered below text -->
+    <div class="hero-vis">
+      <div class="logo-wrap">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+        <div class="od od1"></div><div class="od od2"></div><div class="od od3"></div>
+        <div class="logo-center">
+          <div class="lc-ai">AI</div>
+          <div class="lc-sub">Creative</div>
+          <div class="lc-sub">Academy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<div class="urg">
+  <div class="urg-ticker" id="urgTicker">
+    <div class="urg-item">⚡ Intro Price: <strong>$12 (Rs. 3,499) Only</strong></div>
+    <div class="urg-item"><span>|</span>🔥 <strong>33 of 50 Spots Remaining</strong></div>
+    <div class="urg-item"><span>|</span>📈 Price → <strong>$35 (Rs. 9,999) after 50 students</strong></div>
+    <div class="urg-item"><span>|</span>🎁 <strong>Free Client Ebook Included</strong></div>
+    <div class="urg-item"><span>|</span>⚡ Intro Price: <strong>$12 (Rs. 3,499) Only</strong></div>
+    <div class="urg-item"><span>|</span>🔥 <strong>33 of 50 Spots Remaining</strong></div>
+    <div class="urg-item"><span>|</span>📈 Price → <strong>$35 (Rs. 9,999) after 50 students</strong></div>
+    <div class="urg-item"><span>|</span>🎁 <strong>Free Client Ebook Included</strong></div>
+  </div>
+</div>
+
+<!-- PROOF BAR -->
+<section class="sec" style="padding:52px 28px;background:var(--bg2)">
+  <div class="si"><div class="proof-bar rv">
+    <div class="pi"><div class="pi-n">$15K</div><div class="pi-l">Monthly Potential</div></div>
+    <div class="pi"><div class="pi-n">10</div><div class="pi-l">Modules</div></div>
+    <div class="pi"><div class="pi-n">14</div><div class="pi-l">Income Streams</div></div>
+    <div class="pi"><div class="pi-n">$12</div><div class="pi-l">Launch Price</div></div>
+    <div class="pi"><div class="pi-n">24h</div><div class="pi-l">Access After Pay</div></div>
+  </div></div>
+</section>
+
+<!-- MODULES -->
+<!-- 90-DAY ROADMAP -->
+<section class="sec">
+  <div class="si ctr">
+    <span class="slabel rv">Income Potential</span>
+    <h2 class="stitle rv">What Students Earn in 90 Days</h2>
+    <p class="ssub rv">Here's exactly how students are building income — with these specific skills, in this specific order.</p>
+    <div class="opp-grid">
+      <div class="oc rv">
+        <div class="oc-amt">$300–$800</div>
+        <div class="oc-range">Per Package · Rs. 85,000–2,25,000</div>
+        <div class="oc-label">AI Product Photography</div>
+        <div class="oc-desc">Brands need product photos for Instagram, Amazon, and ads. You deliver 15–20 polished AI product images — no studio, no photographer required.</div>
+        <div class="oc-bullets">
+          <div class="oc-b">→ 15–20 product images per package</div>
+          <div class="oc-b">→ Completed in a single afternoon</div>
+          <div class="oc-b">→ Ecommerce brands, local + international</div>
+        </div>
+        <div class="oc-time">⏱ Possible from Week 3</div>
+      </div>
+      <div class="oc rv">
+        <div class="oc-amt">$500–$2,000</div>
+        <div class="oc-range">Per Campaign · Rs. 1,41,000–5,64,000</div>
+        <div class="oc-label">UGC Talking Ad Videos</div>
+        <div class="oc-desc">Brands pay per video ad campaign. You create 3–5 talking AI character videos that promote their product — real voice, perfect lip sync, zero filming.</div>
+        <div class="oc-bullets">
+          <div class="oc-b">→ 3–5 talking video ads per campaign</div>
+          <div class="oc-b">→ AI voice + lip sync, no recording needed</div>
+          <div class="oc-b">→ US + UK brands pay $500–$2,000/set</div>
+        </div>
+        <div class="oc-time">⏱ Possible from Week 5</div>
+      </div>
+      <div class="oc feat rv">
+        <div class="oc-amt">$1,000–$5,000</div>
+        <div class="oc-range">Per Month · Rs. 2,82,000–14,10,000</div>
+        <div class="oc-label">Monthly Brand Retainer</div>
+        <div class="oc-desc">One brand signs you for ongoing monthly AI content — reels, product ads, influencer visuals. Recurring income without hunting for new clients every month.</div>
+        <div class="oc-bullets">
+          <div class="oc-b">→ Monthly content contract with one brand</div>
+          <div class="oc-b">→ 2–3 retainers = full-time income</div>
+          <div class="oc-b">→ Local start: Rs. 30,000–80,000/month</div>
+        </div>
+        <div class="oc-time">⏱ Possible from Month 2</div>
+      </div>
+      <div class="oc rv">
+        <div class="oc-amt">$2,000–$15,000</div>
+        <div class="oc-range">Per Month · Rs. 5,64,000–42,30,000</div>
+        <div class="oc-label">Faceless AI Influencer</div>
+        <div class="oc-desc">Build a faceless page on Instagram or TikTok. Grow it with AI content. Earn from brand sponsorships, affiliate commissions, and your own digital products — on autopilot.</div>
+        <div class="oc-bullets">
+          <div class="oc-b">→ No face, no camera, no filming ever</div>
+          <div class="oc-b">→ Brand deals + affiliate + own products</div>
+          <div class="oc-b">→ Multiple passive income streams at once</div>
+        </div>
+        <div class="oc-time">⏱ 3–6 months to full monetization</div>
+      </div>
+    </div>
+    <div class="roadmap rv">
+      <div class="rm-title">Your 90-Day Income Roadmap</div>
+      <div class="rm-track">
+        <div class="rm-step"><div class="rm-marker rm-or">W1–2</div><div class="rm-head">Setup + First Images</div><div class="rm-body">Modules 1–3. Free tools, first character. Send 10 DMs using the ebook method.</div><div class="rm-earn" style="color:var(--or)">Target: $100–$500</div></div>
+        <div class="rm-step"><div class="rm-marker rm-bl">W3–5</div><div class="rm-head">Products + Video</div><div class="rm-body">Modules 4–6. Full product placements + cinematic animation. First paying client.</div><div class="rm-earn" style="color:#4C8CE4">Target: $500–$2,000</div></div>
+        <div class="rm-step"><div class="rm-marker rm-pu">W6–8</div><div class="rm-head">Talking Ads + Influencer</div><div class="rm-body">Modules 7–8. Launch faceless page. First talking UGC delivered. Second client.</div><div class="rm-earn" style="color:#8B5CF6">Target: $2,000–$5,000</div></div>
+        <div class="rm-step"><div class="rm-marker rm-gn">Day 90</div><div class="rm-head">Full Income Stack</div><div class="rm-body">Multiple streams running. Retainer clients. Growing influencer page.</div><div class="rm-earn" style="color:var(--gn)">Target: $5,000–$15,000/mo</div></div>
+      </div>
+    </div>
+    <div class="icta rv"><a href="#pricing" class="btn-big">Start My 90 Days — $12 →</a></div>
+  </div>
+</section>
+
+
+<section class="sec" id="modules">
+  <div class="si">
+    <span class="slabel rv">The Curriculum</span>
+    <h2 class="stitle rv">10 Modules. Zero Fluff.<br>Everything You Need.</h2>
+    <p class="ssub rv">One character. One campaign. One complete AI business — built step by step across 10 modules.</p>
+    <div class="mod-wrap rv">
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">01</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Getting Started — Your AI Studio Setup in 10 Minutes</div>
+          <div class="mod-hook">Everything you need to start creating professional AI content today. Free tools. Zero tech skills required. You'll be generating in under 10 minutes.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">The secret free tool that replaces $90/month of subscriptions</div>
+            <div class="mod-bullet">The exact 2-tool workflow that professionals use — and nothing else</div>
+            <div class="mod-bullet">Why 90% of beginners waste money on the wrong tools (avoid this)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">02</div></div>
+        <div class="mod-body">
+          <div class="mod-title">How to Prompt Like a Pro — The Formula Worth $10,000</div>
+          <div class="mod-hook">One formula. Every professional AI image. This is the exact system that separates $5 results from $5,000 results — and it takes 10 minutes to learn.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">The 7-pillar prompt formula — break it down, use it forever</div>
+            <div class="mod-bullet">Type "a woman" vs type this formula — see the difference live</div>
+            <div class="mod-bullet">50 copy-paste prompts included — use them today, charge tomorrow</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">03</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Create Your Ultra-Realistic AI Character — So Real It Fools Everyone</div>
+          <div class="mod-hook">Build a photorealistic AI character that nobody — not designers, not clients, not followers — can tell is AI. This single skill is worth thousands per month.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">The skin texture secret that makes AI look 100% human</div>
+            <div class="mod-bullet">Studio-quality lighting — without a studio, camera, or photographer</div>
+            <div class="mod-bullet">Create your brand character, influencer, or client avatar in one session</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">04</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Full Control — Same Face, Any Country, Any Brand, Any Look</div>
+          <div class="mod-hook">Your character can be placed anywhere in the world — New York, Dubai, Bali, Switzerland — without ever changing their face. Change backgrounds, outfits, and lighting independently.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">Change the background without touching the face — ever</div>
+            <div class="mod-bullet">Swap outfits, adjust lighting, change seasons independently</div>
+            <div class="mod-bullet">One character. Infinite looks. Irreplaceable to every brand that hires you.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">05</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Product Placement — Agencies Charge $2,000 For This. You Do It in 5 Minutes.</div>
+          <div class="mod-hook">Drop any product — perfume, skincare, phone, clothing — into your character's hands with perfect shadows and matched lighting. $2,000 studio quality. 5 minutes of your time.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">Any product, any brand — placed into any scene with perfect realism</div>
+            <div class="mod-bullet">The lighting match trick that makes it look like a real studio shoot</div>
+            <div class="mod-bullet">Deliver 20 product images per hour — charge $500–$900 per set</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">06</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Animate It — Cinematic Video That Production Houses Charge $5,000 For</div>
+          <div class="mod-hook">Your still image now moves. Professional camera push, pan, zoom. Cinematic depth and motion. The kind of brand video that costs $5,000 to produce — delivered in under 5 minutes.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">Slow push-in, dramatic pan, smooth zoom — pro camera moves in one click</div>
+            <div class="mod-bullet">The motion trick that makes any video look cinematic and premium</div>
+            <div class="mod-bullet">One student charged $2,200 per video — from international brands</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">07</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Make It Talk — AI Voice + Lip Sync. Your Character Sells Without You Speaking.</div>
+          <div class="mod-hook">Add a real human AI voice. Perfect lip sync. Your character speaks, promotes, and sells — and none of it is real. Brands pay $500–$3,000 per talking ad. You deliver one in 30 minutes.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">100+ human AI voices — any language, any accent, any tone</div>
+            <div class="mod-bullet">Automatic perfect lip sync — no manual editing, no recording needed</div>
+            <div class="mod-bullet">Result: $1,800 for 3 talking ads — delivered in 4 hours total</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">08</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Build a Faceless AI Influencer — No Face. No Camera. $3,000–$20,000/Month.</div>
+          <div class="mod-hook">Combine Modules 3–7 into a complete running faceless AI influencer page. No face shown. No filming. No camera needed. Create 30 days of content in one afternoon and monetize it every month.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">The niche formula that gets brand deals without millions of followers</div>
+            <div class="mod-bullet">30 days of content created in one afternoon — auto-posted</div>
+            <div class="mod-bullet">Brand deal pitch templates — the exact messages that close deals</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item">
+        <div class="mod-num-col"><div class="mod-num">09</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Get Paid — 14 Income Streams Ranked from Easiest to Highest</div>
+          <div class="mod-hook">Every income path ranked. The exact message that lands a client in 24 hours. How to charge $500–$5,000 without being rejected. The retainer system for predictable monthly income.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">14 income streams — from your first $100 to $10,000 per month</div>
+            <div class="mod-bullet">The direct DM that got students a client response in 24 hours</div>
+            <div class="mod-bullet">Monthly retainer system — one client pays you every month, on autopilot</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-item mod-live">
+        <div class="mod-num-col"><div class="mod-num">10</div></div>
+        <div class="mod-body">
+          <div class="mod-title">Live Challenge — $0 to $15,000/Month Built Live. Nothing Hidden.</div>
+          <div class="mod-hook">Not a replay. A real AI business built from zero — live, inside this module. Every decision, every client message, every result — documented in real time. Follow the exact path yourself.</div>
+          <div class="mod-bullets">
+            <div class="mod-bullet">Real account, real content, real outreach — built from absolute zero</div>
+            <div class="mod-bullet">Every mistake and every win shown as they happen</div>
+            <div class="mod-bullet">Follow the same steps — the complete blueprint is yours to keep</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-bonus">
+        <span class="mod-bonus-badge">🎁 FREE BONUS</span>
+        <div class="mod-bonus-text">
+          <strong>Client Acquisition Ebook — Land Your First Paying Client in 24 Hours.</strong>
+          The exact outreach DM, pricing scripts, and step-by-step 24-hour client method that students used to land their first paid project without Upwork, Fiverr, or cold calling. Works for freelancers, agencies, and complete beginners. Worth $49. Included free with every enrollment.
+        </div>
+      </div>
+
+    </div>
+    <div class="icta rv"><a href="#pricing" class="btn-big">Get Everything — $12 (Rs. 3,499) →</a></div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN + POSSIBILITIES MERGED -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="si">
+    <span class="slabel rv">One Skill. Everything You Can Build.</span>
+    <h2 class="stitle rv">By the End of This Course,<br>You Will Be Able To:</h2>
+    <p class="ssub rv">🎯 Complete this course and you'll have a real, sellable, in-demand skill. Here is exactly what you'll be able to create, sell, and earn from — immediately after finishing.</p>
+    <div class="skill-grid">
+      <div class="sk rv">
+        <div class="sk-icon">🎬</div>
+        <div class="sk-title">Cinematic AI Ad Videos</div>
+        <div class="sk-earn">$500–$2,000 per project</div>
+        <div class="sk-desc">Create a full cinematic brand video from a single photo — professional camera movements, motion effects. Looks like a $5,000 studio production. Takes 30 minutes.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">🧑‍🎤</div>
+        <div class="sk-title">Faceless AI Influencer Page</div>
+        <div class="sk-earn">$2,000–$15,000/month</div>
+        <div class="sk-desc">Build a faceless Instagram or TikTok page powered entirely by AI content. No face, no camera, no filming. Brand deals, affiliate income, sponsorships — all on autopilot.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">🗣️</div>
+        <div class="sk-title">Talking UGC Ad Creator</div>
+        <div class="sk-earn">$500–$5,000 per campaign</div>
+        <div class="sk-desc">Create talking AI character ads for brands — the character speaks, promotes, and sells the product. The #1 most in-demand creative service for global brands right now.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">🖼️</div>
+        <div class="sk-title">AI Product Photography</div>
+        <div class="sk-earn">$300–$900 per package</div>
+        <div class="sk-desc">Deliver complete product photo sets for brands — perfect lighting, realistic shadows, any environment. 20 images in a single afternoon. No studio. No photographer needed.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">📺</div>
+        <div class="sk-title">YouTube Faceless Channel</div>
+        <div class="sk-earn">$3,000–$20,000/month</div>
+        <div class="sk-desc">A full YouTube channel — AI voiceover, AI visuals, AI editing. Zero time on camera. Earn from ads, sponsorships, and affiliate links month after month passively.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">🤖</div>
+        <div class="sk-title">Sell Your Own AI Products</div>
+        <div class="sk-earn">Passive — earn while you sleep</div>
+        <div class="sk-desc">Create and sell prompt packs, presets, and AI templates. List once on Gumroad or Etsy — earn from thousands of buyers worldwide forever without any extra work.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">🌐</div>
+        <div class="sk-title">Sell to International Clients</div>
+        <div class="sk-earn">No Upwork. No portfolio.</div>
+        <div class="sk-desc">Use the direct client method from the bonus ebook to land US and European brands. Get paid in dollars via Payoneer or Wise — from your bedroom in Pakistan.</div>
+      </div>
+      <div class="sk rv">
+        <div class="sk-icon">📱</div>
+        <div class="sk-title">Monthly Brand Retainers</div>
+        <div class="sk-earn">$1,000–$5,000/month per client</div>
+        <div class="sk-desc">Sign one brand on a monthly content contract. Deliver AI reels, product ads, and influencer visuals every month. 2–3 retainers = consistent full-time income.</div>
+      </div>
+    </div>
+    <div class="incl-pills rv">
+      <div class="ip">✓ 50 Ready-to-Use AI Prompts</div>
+      <div class="ip">✓ Secret Cost Hack — saves $70+/month</div>
+      <div class="ip">✓ USD Payment Guide for Pakistan</div>
+      <div class="ip">✓ Free Client Acquisition Ebook</div>
+      <div class="ip">✓ WhatsApp Support Group</div>
+    </div>
+    <div class="icta rv"><a href="#pricing" class="btn-big">I Want This Skill — Enroll for $12 →</a></div>
+    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px">Courses like this sell for $1,000+ abroad. Everything for $12. You earn it back on your first project.</p>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF PAGES -->
+<section class="sec">
+  <div class="si ctr">
+    <span class="slabel rv">Real Proof It Works</span>
+    <h2 class="stitle rv">These Accounts Are Making Millions.<br>All AI. No Real Person.</h2>
+    <p class="ssub rv">Real, public accounts built with the exact skills this course teaches. You can build the same.</p>
+    <div class="pages-grid">
+      <a href="https://www.instagram.com/evadelonne/" target="_blank" class="pgc rv">
+        <div class="pg-plat">Instagram</div>
+        <div class="pg-handle">@evadelonne</div>
+        <div class="pg-followers">1.4M</div>
+        <div class="pg-earn">$15,000–$32,000/month</div>
+        <div class="pg-desc">100% AI-generated lifestyle persona. No real person. No studio. This is Module 7 built live — brand deals flowing in every week.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+      <a href="https://www.instagram.com/zilla.nis/" target="_blank" class="pgc rv">
+        <div class="pg-plat">Instagram</div>
+        <div class="pg-handle">@zilla.nis</div>
+        <div class="pg-followers">2.8M</div>
+        <div class="pg-earn">$25,000–$55,000/month</div>
+        <div class="pg-desc">Faceless AI content creator. Cinematic reels, AI visuals — no face, no camera, no studio. Every post is AI. Every follower is real.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+      <a href="https://www.instagram.com/sylviavane0204" target="_blank" class="pgc rv">
+        <div class="pg-plat">Instagram</div>
+        <div class="pg-handle">@sylviavane0204</div>
+        <div class="pg-followers">920K</div>
+        <div class="pg-earn">$10,000–$22,000/month</div>
+        <div class="pg-desc">AI lifestyle and fashion influencer. Consistent AI character across every post — brand deals monthly. Built using the exact skills in this course.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+      <a href="https://www.instagram.com/withninarose" target="_blank" class="pgc rv">
+        <div class="pg-plat">Instagram</div>
+        <div class="pg-handle">@withninarose</div>
+        <div class="pg-followers">1.6M</div>
+        <div class="pg-earn">$18,000–$40,000/month</div>
+        <div class="pg-desc">AI creative content monetized through brand partnerships. Zero filming. Zero camera. Pure AI skill. You build this in Module 7 of this course.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+      <a href="https://www.tiktok.com/@briefedhistory" target="_blank" class="pgc rv">
+        <div class="pg-plat">TikTok</div>
+        <div class="pg-handle">@briefedhistory</div>
+        <div class="pg-followers">5.2M</div>
+        <div class="pg-earn">$28,000–$65,000/month</div>
+        <div class="pg-desc">Faceless TikTok channel. AI voiceover, AI visuals, AI editing — no camera, no face, no filming. 5.2M people follow an AI account daily.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+      <a href="https://www.tiktok.com/@unlocked_logic" target="_blank" class="pgc rv">
+        <div class="pg-plat">TikTok</div>
+        <div class="pg-handle">@unlocked_logic</div>
+        <div class="pg-followers">3.4M</div>
+        <div class="pg-earn">$20,000–$45,000/month</div>
+        <div class="pg-desc">Fully automated AI TikTok. No filming. No face shown. Zero manual editing. 3.4M followers from AI content anyone can create after this course.</div>
+        <div class="pg-cta">View Profile ↗</div>
+      </a>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:14px;text-align:center">*Earnings estimated based on follower count, engagement rate, and typical brand deal rates in this niche.</p>
+    <div class="icta rv" style="margin-top:32px"><a href="#pricing" class="btn-big">Build Mine — Enroll for $12 (Rs. 3,499)</a></div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="si">
+    <span class="slabel rv ctr">Why This Course</span>
+    <h2 class="stitle rv ctr">What Others Charge vs What You Get</h2>
+    <p class="ssub rv ctr">Creators abroad pay hundreds for individual pieces of what's bundled inside here at $12.</p>
+    <div class="cmp-grid">
+      <div class="cmp-col rv"><div class="cmp-head bad">❌ Without This Course</div><div class="cmp-body"><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">Pay $70+/month for AI tools separately with no guidance on which to use</div></div><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">Spend months finding the right workflow through painful trial and error</div></div><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">Buy multiple courses for $200–$1,000+ just to get the full picture</div></div><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">No USD payment guidance specific to Pakistan — stuck guessing</div></div><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">No support — completely stuck by yourself when things go wrong</div></div><div class="cmp-row"><div class="ci ci-rd">✗</div><div class="cmp-t">Compete for pennies on Upwork and Fiverr against thousands of others</div></div></div></div>
+      <div class="cmp-col rv"><div class="cmp-head good">✅ With AI Creative Academy</div><div class="cmp-body"><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Get ALL tools for almost nothing — the secret cost hack is inside Module 1</div></div><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Clear 90-day roadmap from day one — you always know exactly what to do next</div></div><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Everything in one place for $12 — courses abroad charge $500–$1,000 for one piece</div></div><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Full USD payment guide for Pakistan — Payoneer, Wise and more covered</div></div><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Active WhatsApp support group — daily help from the team and students</div></div><div class="cmp-row"><div class="ci ci-gn">✓</div><div class="cmp-t">Direct client method — premium rates, no platforms, no price competition</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS WITH PAGINATION -->
+<section class="sec">
+  <div class="si">
+    <span class="slabel rv ctr">Student Results</span>
+    <h2 class="stitle rv ctr">Real Students. Real Money.</h2>
+    <p class="ssub rv ctr">From Karachi to Lahore to Peshawar — students earning in dollars from their bedrooms.</p>
+    <div class="testi-pages rv" id="testiPages">
+      <!-- PAGE 1 -->
+      <div class="testi-page active" id="tp-0">
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"No design background. After Module 4, I made a full cinematic ad for a local clothing brand — AI character, camera movements, voiceover. They paid Rs. 80,000 for my first project and immediately asked for 3 more. Couldn't believe it was that easy."</p><div class="tc-earn te-or">💰 Rs. 80,000 — first project</div><div class="tc-foot"><div class="tc-av av-or">A</div><div><div class="tc-name">Ahmed K.</div><div class="tc-loc">Karachi</div></div><span class="tc-tag tt-or">Video Ad</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"After Module 5, I cold-pitched a UK skincare brand on Instagram with sample talking ads. They hired me for a 5-video campaign. Paid £950 upfront. No studio, no filming, no recording — just AI tools and what I learned in this course. Delivered in 2 days."</p><div class="tc-earn te-bl">💰 £950 — UK brand campaign</div><div class="tc-foot"><div class="tc-av av-bl">S</div><div><div class="tc-name">Sana R.</div><div class="tc-loc">Lahore</div></div><span class="tc-tag tt-bl">UGC Ads</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"The cost hack in Module 1 saved me Rs. 22,000/month on AI subscriptions. I was paying for tools I barely needed. Now I use better alternatives for almost free. That saving started covering groceries within the first week alone."</p><div class="tc-earn te-gn">💰 Rs. 22,000/month saved</div><div class="tc-foot"><div class="tc-av av-gn">U</div><div><div class="tc-name">Usman T.</div><div class="tc-loc">Islamabad</div></div><span class="tc-tag tt-gn">Creator</span></div></div>
+      </div>
+      <!-- PAGE 2 -->
+      <div class="testi-page" id="tp-1">
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Built a faceless AI lifestyle page after Module 7. 9 weeks of consistent AI content — no filming, no face. A Dubai clothing brand reached out through DMs and offered a sponsored campaign. Rs. 95,000 for one collaboration. I have never been on camera once."</p><div class="tc-earn te-pu">💰 Rs. 95,000 — one campaign deal</div><div class="tc-foot"><div class="tc-av av-pu">B</div><div><div class="tc-name">Bilal A.</div><div class="tc-loc">Rawalpindi</div></div><span class="tc-tag tt-pu">Influencer</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"A property developer needed a video showcase for a new housing project. I created a cinematic walkthrough — AI characters, aerial motion, professional voiceover, full production feel. Took me 6 hours. They paid Rs. 1,10,000 and signed me for 3 more immediately."</p><div class="tc-earn te-or">💰 Rs. 1,10,000 — one property video</div><div class="tc-foot"><div class="tc-av av-or">A</div><div><div class="tc-name">Ayesha N.</div><div class="tc-loc">Islamabad</div></div><span class="tc-tag tt-or">Cinematic</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"3 monthly retainer clients — a Karachi restaurant group, a clothing brand, and a US supplement company. Each pays monthly for ongoing AI content. Combined: around $3,200/month. I left my Rs. 50,000/month job 3 months ago and my income has doubled since."</p><div class="tc-earn te-bl">💰 $3,200/month — 3 retainers</div><div class="tc-foot"><div class="tc-av av-bl">K</div><div><div class="tc-name">Kamran M.</div><div class="tc-loc">Lahore</div></div><span class="tc-tag tt-bl">Retainer</span></div></div>
+      </div>
+      <!-- PAGE 3 -->
+      <div class="testi-page" id="tp-2">
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Using Module 2's formula, I built an AI product photography service for ecommerce brands. First client was a US Amazon seller — full skincare product line, 22 AI images, every angle covered. They paid $780. Delivered in one afternoon. They came back the following week."</p><div class="tc-earn te-gn">💰 $780 — 22 product images</div><div class="tc-foot"><div class="tc-av av-gn">R</div><div><div class="tc-name">Raza H.</div><div class="tc-loc">Multan</div></div><span class="tc-tag tt-gn">Product Photos</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"I was charging Rs. 12,000 per freelance design project. After adding AI cinematic video, I now charge Rs. 60,000–90,000 for similar briefs. Same clients, same turnaround — completely different income. Monthly earnings doubled within 6 weeks of finishing the course."</p><div class="tc-earn te-or">💰 5–7× higher project value</div><div class="tc-foot"><div class="tc-av av-or">I</div><div><div class="tc-name">Irfan B.</div><div class="tc-loc">Islamabad</div></div><span class="tc-tag tt-or">Designer</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Pitched a Lahore restaurant chain on a monthly AI content retainer — reels, product shots, event coverage. They signed for Rs. 80,000/month. Month 2 they referred me to 2 more food businesses. I now earn more per week than I used to in a full month at my old job."</p><div class="tc-earn te-bl">💰 Rs. 80,000/month — restaurant retainer</div><div class="tc-foot"><div class="tc-av av-bl">Z</div><div><div class="tc-name">Zara M.</div><div class="tc-loc">Faisalabad</div></div><span class="tc-tag tt-bl">Retainer</span></div></div>
+      </div>
+      <!-- PAGE 4 -->
+      <div class="testi-page" id="tp-3">
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"My agency added AI creative as a premium offering. Within 6 weeks we signed a Lahore fashion brand on a 3-month content contract — $5,000 paid upfront. One client, one deal, more than our agency's previous quarter combined. The service sells itself once you show the samples."</p><div class="tc-earn te-or">💰 $5,000 — 3-month contract</div><div class="tc-foot"><div class="tc-av av-or">F</div><div><div class="tc-name">Farhan Q.</div><div class="tc-loc">Karachi</div></div><span class="tc-tag tt-or">Agency</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Final year, full-time student. Built a portfolio from the course — AI videos, product campaigns, talking ads. A US fitness brand found me through Instagram and offered $1,200/month for ongoing content. 4 months in, still a student, still earning. Changed everything."</p><div class="tc-earn te-pu">💰 $1,200/month — while studying</div><div class="tc-foot"><div class="tc-av av-pu">A</div><div><div class="tc-name">Ali Z.</div><div class="tc-loc">Lahore</div></div><span class="tc-tag tt-pu">Student</span></div></div>
+        <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"I now charge Rs. 1,20,000 per full AI campaign package — product shots, cinematic reels, talking ads. 4 active clients. I work from home, set my own schedule, and earn more in a single week than my entire previous monthly salary. The skills from this course made all of it possible."</p><div class="tc-earn te-gn">💰 Rs. 1,20,000 per campaign</div><div class="tc-foot"><div class="tc-av av-gn">S</div><div><div class="tc-name">Sara L.</div><div class="tc-loc">Lahore</div></div><span class="tc-tag tt-gn">Full Package</span></div></div>
+      </div>
+    </div>
+    <!-- Pager controls -->
+    <div class="testi-pager">
+      <button class="tp-btn" id="tpPrev" onclick="changeTp(-1)">←</button>
+      <div class="tp-dots" id="tpDots"></div>
+      <button class="tp-btn" id="tpNext" onclick="changeTp(1)">→</button>
+    </div>
+    <div style="text-align:center;margin-top:8px"><span class="tp-label" id="tpLabel">Page 1 of 4</span></div>
+    <div class="icta rv" style="margin-top:36px"><a href="#pricing" class="btn-big">I Want These Results — Enroll Now →</a></div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="si ctr">
+    <span class="slabel rv">Made For</span>
+    <h2 class="stitle rv">This Will Change Your Life If…</h2>
+    <div class="who-grid">
+      <div class="wc rv"><div class="wc-icon">🎯</div><div class="wc-title">Complete Beginners</div><div class="wc-desc">Zero experience. If you can use WhatsApp, you can complete this and start earning within 30 days of finishing.</div></div>
+      <div class="wc rv"><div class="wc-icon">💼</div><div class="wc-title">Freelancers</div><div class="wc-desc">Add AI skills, charge $500–$3,000 per project instead of competing for pennies on Upwork and Fiverr.</div></div>
+      <div class="wc rv"><div class="wc-icon">🏢</div><div class="wc-title">Business Owners</div><div class="wc-desc">Stop paying agencies. Create your own cinematic ads, influencer content and brand videos yourself — for almost nothing.</div></div>
+      <div class="wc rv"><div class="wc-icon">🌍</div><div class="wc-title">Anyone Wanting Dollars</div><div class="wc-desc">AI creative is the #1 skill global brands are paying for right now. Get in before it gets saturated.</div></div>
+      <div class="wc rv"><div class="wc-icon">🎓</div><div class="wc-title">Students</div><div class="wc-desc">Earn from your bedroom while studying. Multiple students in this course earn more than their parents at their jobs.</div></div>
+      <div class="wc rv"><div class="wc-icon">🚀</div><div class="wc-title">Creators & Influencers</div><div class="wc-desc">Scale your content without showing your face, without a camera, without a team. AI does the heavy lifting.</div></div>
+    </div>
+    <div class="icta rv"><a href="#pricing" class="btn-big">This Is For Me — Enroll Now</a></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec pricing-sec" id="pricing">
+  <div class="si ctr">
+    <span class="slabel rv">Enroll Today</span>
+    <h2 class="stitle rv">Get Full Access — One Price, Forever</h2>
+    <p class="ssub rv">17 students already enrolled. 33 spots left at launch price. Price increases after.</p>
+    <div class="pricing-card rv">
+      <div class="pricing-glow"></div>
+      <div class="price-tag">🔥 Launch Price — First 50 Students Only</div>
+      <div class="price-old">Normal price: $35 (Rs. 9,999)</div>
+      <div class="price-main">$12</div>
+      <div class="price-pkr">Rs. 3,499</div>
+      <div class="price-note">You earn $12 back on your very first client project. Every module after that is pure profit.</div>
+      <div class="bubble-wrap">
+        <div class="bubble-label">Spots taken at launch price</div>
+        <div class="bubble-grid" id="bubbleGrid"></div>
+        <div style="font-size:11px;color:var(--muted)">17 taken · 33 remaining · <span style="color:var(--or);font-weight:700">Grab yours now</span></div>
+      </div>
+      <ul class="incl-list">
+        <li><div class="ick ick-or">✓</div>9 Modules — complete step-by-step system from image to income</li>
+        <li><div class="ick ick-bl">✓</div>Lifetime Access — watch anytime, forever, all future updates</li>
+        <li><div class="ick ick-gn">✓</div>Secret Cost Hack — saves $70+/month on AI tools from day one</li>
+        <li><div class="ick ick-or">✓</div>50 Ready-to-Use AI Creative Prompts — use today, charge tomorrow</li>
+        <li><div class="ick ick-bl">✓</div>UGC Ad Templates for International Clients</li>
+        <li><div class="ick ick-gn">✓</div>Faceless Influencer Page and YouTube Blueprint</li>
+        <li><div class="ick ick-or">✓</div>USD Payment Guide — how to receive dollars in Pakistan</li>
+        <li><div class="ick ick-bl">✓</div>WhatsApp Support Group — active daily help from the team</li>
+        <li><div class="ick ick-gn">✓</div>Live Challenge — watch $0 to $15,000/month built in real time</li>
+        <li><div class="ick ick-or">✓</div>Private Community Access — lifetime</li>
+        <li><div class="ick ick-gn">🎁</div><strong>FREE BONUS:</strong>&nbsp;Client Acquisition Ebook ($49 value) — updated regularly</li>
+      </ul>
+
+      <div class="pay-select">
+        <div class="pay-step-heading">
+          <span class="step-badge">STEP 1</span>
+          <span class="step-title">Choose How You Want to Pay</span>
+        </div>
+        <div class="pay-tabs">
+          <button class="pay-tab active" id="tab-jazz" onclick="switchTab('jazz')"><span class="ti">📱</span>JazzCash</button>
+          <button class="pay-tab" id="tab-easy" onclick="switchTab('easy')"><span class="ti">💚</span>EasyPaisa</button>
+          <button class="pay-tab" id="tab-bank" onclick="switchTab('bank')"><span class="ti">🏦</span>Bank</button>
+        </div>
+        <div class="pay-panel active" id="panel-jazz" style="display:block">
+          <div class="pay-detail">
+            <div class="pay-row">
+              <span class="pay-key">Send To (JazzCash)</span>
+              <div class="copy-row">
+                <span class="pay-val" id="jcNum">0111-7494114</span>
+                <button class="copy-btn" onclick="copyText('jcNum',this)" title="Copy number">📋</button>
+              </div>
+            </div>
+            <div class="pay-row">
+              <span class="pay-key">Account Title</span>
+              <div class="copy-row">
+                <span class="pay-val" id="jcTitle">SlumpScan</span>
+                <button class="copy-btn" onclick="copyText('jcTitle',this)" title="Copy title">📋</button>
+              </div>
+            </div>
+            <div class="pay-row"><span class="pay-key">Amount to Send</span><span class="pay-val big">Rs. 3,499</span></div>
+          </div>
+          <div class="big-steps">
+            <div class="big-step">
+              <div class="bstep-num">1</div>
+              <div class="bstep-body">
+                <div class="bstep-head">Open JazzCash App</div>
+                <div class="bstep-desc">Open the JazzCash app on your phone. Tap <strong>"Send Money"</strong> from the main menu.</div>
+              </div>
+            </div>
+            <div class="bstep-arrow">↓</div>
+            <div class="big-step">
+              <div class="bstep-num">2</div>
+              <div class="bstep-body">
+                <div class="bstep-head">Send Rs. 3,499 to 0111-7494114</div>
+                <div class="bstep-desc">Enter the number <strong>0111-7494114</strong>, account name <strong>SlumpScan</strong>, and amount <strong>Rs. 3,499</strong>. Confirm the payment.</div>
+              </div>
+            </div>
+            <div class="bstep-arrow">↓</div>
+            <div class="big-step">
+              <div class="bstep-num">3</div>
+              <div class="bstep-body">
+                <div class="bstep-head">Screenshot the Confirmation</div>
+                <div class="bstep-desc">After payment completes, take a <strong>screenshot of the success screen</strong> from JazzCash. Save it — you'll send it in the next step.</div>
+              </div>
+            </div>
+            <div class="bstep-arrow">↓</div>
+            <div class="big-step bstep-final">
+              <div class="bstep-num" style="background:linear-gradient(135deg,#25D366,#128C7E)">4</div>
+              <div class="bstep-body">
+                <div class="bstep-head">Send Screenshot on WhatsApp</div>
+                <div class="bstep-desc">Send the screenshot to our WhatsApp below. We verify and send your <strong>private community access link within 24 hours</strong> — usually much faster.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pay-panel" id="panel-easy" style="display:none">
+          <div class="pay-soon">💚 EasyPaisa details coming soon — use JazzCash for now</div>
+        </div>
+        <div class="pay-panel" id="panel-bank" style="display:none">
+          <div class="pay-soon">🏦 Bank transfer details coming soon — use JazzCash for now</div>
+        </div>
+      </div>
+
+      <div class="pay-step-heading" style="margin-bottom:12px">
+        <span class="step-badge">STEP 2</span>
+        <span class="step-title">Send Your Payment Screenshot</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:12px;text-align:left">After sending the payment, take a screenshot of your confirmation and send it to us on WhatsApp. We verify and send your access link within 24 hours.</p>
+      <div style="font-size:13px;font-weight:700;color:#fff;text-align:left;margin-bottom:10px">Step 2 — Send Your Payment Screenshot</div>
+      <a href="https://wa.me/921117494114?text=Hi!%20I%20have%20sent%20Rs.%203%2C499%20to%20JazzCash%200111-7494114%20(SlumpScan).%20Sending%20my%20payment%20screenshot%20now.%20Please%20send%20me%20AI%20Creative%20Academy%20access." class="btn-wa" target="_blank">📱 Send Screenshot on WhatsApp — Get Access in 24 Hours</a>
+      <p class="pay-note">We verify every payment manually. Once confirmed, you receive your private community access link on WhatsApp. Questions? WhatsApp us anytime — we reply fast.</p>
+      <div class="price-urgent">⚡ <strong>Price returns to $35 (Rs. 9,999)</strong> after 33 more students enroll. 17 already gone.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="si" style="max-width:740px">
+    <span class="slabel rv ctr">Still Have Questions?</span>
+    <h2 class="stitle rv ctr">FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">Do I need any experience?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Zero. If you can use WhatsApp, you can complete this course. It starts from absolute zero — no AI knowledge, no design background, no tech skills required. You'll be generating your first professional AI image in Module 1, before it even ends.</div></div></div>
+      <div class="faq-item"><button class="faq-q">What can I realistically earn in 90 days?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Realistically, $500–$2,000 in your first 30–60 days if you follow the course and use the ebook client method. Students have hit Rs. 25,000 in week one, $800 from a US client in 3 weeks, and $1,500/month within 60 days. Results depend on effort — but the skill is real and the demand is massive.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Why is this only $12 (Rs. 3,499)?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">This is a launch price for the first 50 students only. 17 are already enrolled. We want early students who will get results, share feedback, and grow with us. After 50 students, the price goes permanently to $35 (Rs. 9,999). No exceptions, no discount codes after that.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Do I need to show my face?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Never. Every income stream in this course is 100% faceless. You create AI characters, AI influencer profiles, AI videos — without ever showing yourself on camera. Module 7 specifically teaches how to build a complete faceless AI influencer from scratch.</div></div></div>
+      <div class="faq-item"><button class="faq-q">What is the bonus client acquisition book?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">It's a step-by-step guide to finding and closing clients for your AI creative services — without using Upwork, Fiverr, or any platform. It includes the exact outreach message that has gotten students responses within hours, a pricing guide, and a closing script for beginners with no portfolio. Worth $10 on its own — included free with every enrollment and updated regularly.</div></div></div>
+      <div class="faq-item"><button class="faq-q">How do I receive USD from international clients?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Module 8 (Get Paid) includes a complete USD payment guide for Pakistan — covering Payoneer, Wise, and other methods that work. Multiple students are already receiving dollar payments from US and European clients. This is fully covered inside the course.</div></div></div>
+      <div class="faq-item"><button class="faq-q">How do I get access after paying?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Pay via JazzCash (0111-7494114 / SlumpScan / Rs. 3,499), take a screenshot of your confirmation, and send it to us on WhatsApp. We verify manually and send your private community access link within 24 hours — usually much faster. The WhatsApp button on this page has a pre-written message ready for you.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Is the price really going up after 50 students?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-ai">Yes, absolutely. This is not a fake urgency tactic. The $12 launch price is for the first 50 students only. 17 have already enrolled. Once we hit 50, the price moves to $35 (Rs. 9,999) permanently. If you're reading this, spots are still available — but act now.</div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:28px">
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Chat with us on WhatsApp — we reply fast.</p>
+      <a href="#pricing" class="btn-big">Enroll Now — $12 (Rs. 3,499)</a>
+    </div>
+  </div>
+</section>
+
+<!-- STILL THINKING -->
+<section class="sec" style="padding:40px 28px;background:linear-gradient(135deg,rgba(249,115,22,.06),var(--bg),rgba(76,140,228,.06))">
+  <div class="si ctr">
+    <div class="still-thinking rv">
+      <div class="st-badge">STILL THINKING ABOUT IT?</div>
+      <h3 class="st-title">Every day you wait is a day someone else takes your client.</h3>
+      <a href="#pricing" class="btn-big">Claim Your Spot — Only $12</a>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM STRIP -->
+<section class="sec" style="padding:52px 28px;background:var(--bg2);border-top:1px solid var(--border)">
+  <div class="si ctr">
+    <div class="ig-strip rv">
+      <div class="ig-icon">📸</div>
+      <div class="ig-text">
+        <div class="ig-title">See Our AI Creatives in Action</div>
+        <div class="ig-sub">Follow us on Instagram to see exactly what you will be creating after this course.</div>
+      </div>
+      <a href="https://instagram.com/aicreativeacademy" target="_blank" class="btn-ig">Follow @aicreativeacademy →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fcta">
+  <div class="fcta-bg"></div><div class="fcta-orb"></div>
+  <div class="fcta-inner">
+    <h2 class="fcta-title">Start Today.</h2>
+    <p class="fcta-sub">The tools are free. The knowledge is here. The only thing missing is you.</p>
+    <a href="#pricing" class="btn-big" onclick="event.preventDefault();document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Enroll Now — $12 (Rs. 3,499) →</a>
+    <p style="margin-top:14px;font-size:12px;color:var(--muted)">33 spots left at this price · Lifetime access · Private community</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi">
+    <div class="f-brand"><span>AI</span> Creative Academy</div>
+    <div class="f-copy">© 2026 AI Creative Academy. All rights reserved.</div>
+    <div class="f-links">
+      <a href="https://instagram.com/aicreativeacademy" target="_blank">Instagram</a>
+      <a href="https://wa.me/921117494114" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+'use strict';
+
+/* Copy button */
+function copyText(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent.trim()).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋'; btn.classList.remove('copied'); }, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = el.textContent.trim();
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+
+/* ── Progress bar ── */
+const prog = document.getElementById('prog');
+window.addEventListener('scroll', () => {
+  prog.style.width = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100, 100) + '%';
+}, {passive:true});
+
+/* ── Scroll reveal ── */
+const rvObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); rvObs.unobserve(e.target); }});
+}, {threshold: 0.06, rootMargin: '0px 0px -24px 0px'});
+document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
+
+/* ── Module stagger ── */
+const mods = Array.from(document.querySelectorAll('.mod-item'));
+mods.forEach(m => { m.style.cssText += 'opacity:0;transform:translateX(-20px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.68,0,1.2)'; });
+const mObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const i = mods.indexOf(e.target);
+      setTimeout(() => { e.target.style.opacity = '1'; e.target.style.transform = 'translateX(0)'; }, i * 55);
+      mObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.07});
+mods.forEach(m => mObs.observe(m));
+
+/* ── FAQ ── */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+/* ── Payment tabs ── */
+function switchTab(tab) {
+  ['jazz','easy','bank'].forEach(t => {
+    const btn = document.getElementById('tab-' + t);
+    const panel = document.getElementById('panel-' + t);
+    if (btn) btn.classList.toggle('active', t === tab);
+    if (panel) { panel.classList.toggle('active', t === tab); panel.style.display = t === tab ? 'block' : 'none'; }
+  });
+}
+
+/* ── Testimonial pagination ── */
+let currentTp = 0;
+const totalTp = 4;
+const tpDotsEl = document.getElementById('tpDots');
+const tpLabel = document.getElementById('tpLabel');
+
+function buildDots() {
+  if (!tpDotsEl) return;
+  tpDotsEl.innerHTML = '';
+  for (let i = 0; i < totalTp; i++) {
+    const d = document.createElement('div');
+    d.className = 'tp-dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goTp(i);
+    tpDotsEl.appendChild(d);
+  }
+}
+
+function goTp(idx) {
+  document.getElementById('tp-' + currentTp).classList.remove('active');
+  currentTp = (idx + totalTp) % totalTp;
+  const page = document.getElementById('tp-' + currentTp);
+  if (page) page.classList.add('active');
+  document.querySelectorAll('.tp-dot').forEach((d, i) => d.classList.toggle('active', i === currentTp));
+  if (tpLabel) tpLabel.textContent = 'Page ' + (currentTp + 1) + ' of ' + totalTp;
+}
+
+function changeTp(dir) { goTp(currentTp + dir); }
+buildDots();
+
+/* ── Bubble grid ── */
+const bg = document.getElementById('bubbleGrid');
+if (bg) {
+  const bObs = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) return;
+    const cols = ['#F97316','#4C8CE4','#8B5CF6'];
+    for (let i = 0; i < 50; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble ' + (i < 17 ? 'taken' : 'open');
+      if (i < 17) {
+        b.style.background = cols[i % 3];
+        b.style.boxShadow = '0 0 8px ' + cols[i % 3] + '80';
+        b.style.animationDelay = (i * 0.04) + 's';
+      }
+      bg.appendChild(b);
+    }
+    bObs.disconnect();
+  }, {threshold: 0.3});
+  bObs.observe(bg);
+}
+
+/* ── Ripple on buttons ── */
+document.querySelectorAll('.btn-p,.btn-big,.btn-wa,.btn-nav').forEach(btn => {
+  btn.style.position = 'relative';
+  btn.style.overflow = 'hidden';
+  btn.addEventListener('click', function(e) {
+    const r = this.getBoundingClientRect();
+    const size = Math.max(r.width, r.height);
+    const el = document.createElement('span');
+    el.className = 'rpl-el';
+    Object.assign(el.style, {
+      width: size + 'px', height: size + 'px',
+      left: (e.clientX - r.left - size / 2) + 'px',
+      top: (e.clientY - r.top - size / 2) + 'px'
+    });
+    this.appendChild(el);
+    setTimeout(() => el.remove(), 600);
+  });
+});
+
+/* ── Parallax orbs (desktop) ── */
+if (window.innerWidth > 900) {
+  const o1 = document.querySelector('.h-orb1');
+  const o2 = document.querySelector('.h-orb2');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (o1) o1.style.transform = `translate(${y*.05}px,${y*.08}px)`;
+    if (o2) o2.style.transform = `translate(${-y*.04}px,${y*.06}px)`;
+  }, {passive:true});
+}
+
+
+/* ── ANIMATED COUNTER for income amounts — disabled to prevent display corruption ── */
+function animateValue(el, end, prefix, suffix, duration) {
+  const startTime = performance.now();
+  const start = 0;
+  function tick(now) {
+    const elapsed = Math.min((now - startTime) / duration, 1);
+    const ease = 1 - Math.pow(1 - elapsed, 3);
+    const val = Math.round(start + (end - start) * ease);
+    el.textContent = prefix + val.toLocaleString() + suffix;
+    if (elapsed < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+/* ── ANIMATED COUNTER — hero stats only, income cards left as-is ── */
+
+/* ── FLOATING PARTICLES (lightweight, desktop only) ── */
+if (window.innerWidth > 900) {
+  const particleColors = ['#F97316', '#4C8CE4', '#8B5CF6'];
+  function spawnParticle() {
+    const p = document.createElement('div');
+    const color = particleColors[Math.floor(Math.random() * 3)];
+    const size = 2 + Math.random() * 2;
+    const x = Math.random() * window.innerWidth;
+    const dur = 6000 + Math.random() * 8000;
+    const drift = (Math.random() - 0.5) * 100;
+    p.style.cssText = [
+      'position:fixed', 'border-radius:50%', 'pointer-events:none', 'z-index:1',
+      `width:${size}px`, `height:${size}px`, `background:${color}`,
+      `left:${x}px`, 'bottom:-10px', 'opacity:0',
+      `transition:opacity 0.5s ease`,
+      `animation:pfloat ${dur}ms linear forwards`
+    ].join(';');
+    p.style.setProperty('--drift', drift + 'px');
+    document.body.appendChild(p);
+    requestAnimationFrame(() => p.style.opacity = '0.5');
+    setTimeout(() => p.remove(), dur + 600);
+  }
+  // CSS for particle float
+  const pStyle = document.createElement('style');
+  pStyle.textContent = `@keyframes pfloat{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:0.5}90%{opacity:0.2}100%{transform:translateY(-100vh) translateX(var(--drift,0px));opacity:0}}`;
+  document.head.appendChild(pStyle);
+  setInterval(spawnParticle, 1200);
+}
+
+/* ── HERO STATS counter ── */
+const hstats = document.querySelectorAll('.hs-n');
+let hsDone = false;
+const hsObs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting && !hsDone) {
+    hsDone = true;
+    const data = [{n:15,pre:'$',suf:'K'},{n:9,pre:'',suf:''},{n:90,pre:'',suf:''},{n:12,pre:'$',suf:''}];
+    hstats.forEach((el, i) => {
+      if (data[i]) setTimeout(() => animateValue(el, data[i].n, data[i].pre, data[i].suf, 1400), i * 120 + 600);
+    });
+  }
+}, {threshold: 0.6});
+if (hstats.length) hsObs.observe(hstats[0].closest('.hero') || document.body);
+
+console.log('ACA ✓');
+</script>
+</body>
+</html>
